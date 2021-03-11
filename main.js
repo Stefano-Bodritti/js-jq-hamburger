@@ -3,7 +3,7 @@
 var buttonMobile = $(".header-right > a");
 var menuMobile = $(".hamburger-menu");
 var visible = false;
-var cross = $(".hamburger-menu > a");
+var cross = $(".close");
 
 // metodo non funzionante
 // buttonMobile.click(
@@ -12,14 +12,26 @@ var cross = $(".hamburger-menu > a");
 //   }
 // );
 
+// Metodo 1
+// buttonMobile.click(
+//   function () {
+//     menuMobile.show("fast");
+//   }
+// );
+// cross.click(
+//   function () {
+//     menuMobile.hide("fast");
+//   }
+// );
+
+// Metodo 2
 buttonMobile.click(
   function () {
-    menuMobile.show("fast");
+    menuMobile.fadeIn("slow");
   }
 );
-
 cross.click(
   function () {
-    menuMobile.hide("fast");
+    menuMobile.fadeOut("slow");
   }
 );
