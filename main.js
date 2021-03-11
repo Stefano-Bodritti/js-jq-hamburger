@@ -3,6 +3,7 @@
 var buttonMobile = $(".header-right > a");
 var menuMobile = $(".hamburger-menu");
 var visible = false;
+var cross = $(".hamburger-menu > a");
 
 // metodo non funzionante
 // buttonMobile.click(
@@ -14,5 +15,11 @@ var visible = false;
 buttonMobile.click(
   function () {
     menuMobile.show("fast");
+  }
+);
+
+cross.click(
+  function () {
+    menuMobile.hide("fast");
   }
 );
